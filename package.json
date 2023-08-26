@@ -1,0 +1,22 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "curso nodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1360cub/curso-node.git"
+  },
+  "keywords": [
+    "nodeJs"
+  ],
+  "author": "d1360cub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d1360cub/curso-node/issues"
+  },
+  "homepage": "https://github.com/d1360cub/curso-node#readme"
+}
