@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/d1360cub/curso-node/issues"
   },
-  "homepage": "https://github.com/d1360cub/curso-node#readme"
+  "homepage": "https://github.com/d1360cub/curso-node#readme",
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  }
 }
