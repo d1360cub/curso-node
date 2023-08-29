@@ -1,0 +1,11 @@
+###Obtener Rick Sanchez
+GET http://localhost:3000/rickandmorty/ricksanchez
+
+###Crear un personaje
+POST http://localhost:3000/character
+Content-Type: application/json
+
+{
+  "name": "Test Character",
+  "method": "POST"
+}

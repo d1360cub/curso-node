@@ -1,0 +1,31 @@
+{
+  "name": "week-2",
+  "version": "1.0.0",
+  "description": "week 2 nodeJs course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev1": "nodemon 1.http.js",
+    "dev2": "nodemon 2.routing.js",
+    "dev3": "nodemon 3.express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1360cub/curso-node.git"
+  },
+  "keywords": [
+    "nodeJs"
+  ],
+  "author": "d1360cub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d1360cub/curso-node/issues"
+  },
+  "homepage": "https://github.com/d1360cub/curso-node#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
