@@ -15,6 +15,12 @@ export class movieController {
     res.status(404).json({ message: 'Movie not found' });
   }
 
+  static async getBySearch(req, res) {
+    const { criteria } = req.query;
+    const result = await movieModel.getBySearch({ criteria });
+    res.json(result);
+  }
+
   static async create(req, res) {
     const result = validateMovie(req.body);
     if (!result.success) {
