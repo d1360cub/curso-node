@@ -7,6 +7,9 @@ GET http://localhost:3000/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
 ### Obtiene todas las peliculas del mismo genero
 GET http://localhost:3000/movies?genre=drama
 
+### Obtiene por titulo
+GET http://localhost:3000/movies/search/query?criteria=title
+
 ### Crea una pelicula
 POST http://localhost:3000/movies
 Content-Type: application/json

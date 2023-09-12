@@ -18,6 +18,27 @@ export class movieModel {
     return movie;
   }
 
+  static async getBySearch({ criteria }) {
+    switch (criteria) {
+      case 'title':
+        return movies.map((movie) => movie.title);
+      case 'year':
+        return movies.map((movie) => movie.year);
+      case 'director':
+        return movies.map((movie) => movie.director);
+      case 'duration':
+        return movies.map((movie) => movie.duration);
+      case 'poster':
+        return movies.map((movie) => movie.poster);
+      case 'genre':
+        return movies.map((movie) => movie.genre);
+      case 'rate':
+        return movies.map((movie) => movie.rate);
+      default:
+        return movies;
+    }
+  }
+
   static async create({ input }) {
     const newMovie = {
       id: randomUUID(),
