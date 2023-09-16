@@ -1,0 +1,39 @@
+### Obtiene todas las peliculas
+GET http://localhost:3000/movies
+
+### Obtiene una pelicula por id
+GET http://localhost:3000/movies/4231cc7f-536c-11ee-b37c-74e5f9821f13
+
+### Obtiene todas las peliculas del mismo genero
+GET http://localhost:3000/movies?genre=drama
+
+### Obtiene los directores de todas las peliculas
+GET http://localhost:3000/movies/search/query?criteria=director
+
+### Crea una pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Movie Test",
+  "year": 2023,
+  "director": "d1360cub",
+  "duration": 240,
+  "poster": "https://i.pinimg.com/originals/42/42/65/4242658e6f1b0d6322a4a93e0383108b.png",
+  "genre": ["Drama", "Comedy"],
+  "rate": 8.5
+}
+
+### Actualiza solo una parte de una pelicula
+PATCH http://localhost:3000/movies/4231cc7f-536c-11ee-b37c-74e5f9821f13
+Content-Type: application/json
+
+{
+  "title": "Movie Updated",
+  "year": 1996
+}
+
+### Borra una pelicula
+DELETE http://localhost:3000/movies/72d50828-5367-11ee-b37c-74e5f9821f13
+###
+http://localhost:3000/fdfadsaf
